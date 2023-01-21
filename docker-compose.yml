@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - db_data:/home/app/webapp/db.sqlite3
+
+volumes:
+  db_data:
