@@ -19,6 +19,16 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
+Also you need to create a superuser in order to use the admin panel. You can do that by running the following command:
+```
+python manage.py createsuperuser
+```
+
+## Run Updater
+The project uses a django command to update the monitoring endpoints. You can run the updater by running the following command:
+```
+python manage.py updater 100 # Run updater every 100 seconds
+```
 
 ## Usage
 You can use the following endpoints to interact with the project:
